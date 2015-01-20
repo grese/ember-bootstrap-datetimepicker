@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       options: {
         templateName: function(sourceFile) {
           var template = sourceFile.replace('src/templates/', '').replace('/', '-');
-          return 'ember-component-starter-template-' + template;
+          return 'ember-bootstrap-datetimepicker-template-' + template;
         }
       },
       'build/templates.js': ["src/**/*.hbs"]
