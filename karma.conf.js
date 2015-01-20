@@ -8,6 +8,8 @@ module.exports = function(config) {
       // Load vendor files (dependencies)...
       'vendor/jquery/dist/jquery.js',
       'vendor/handlebars/handlebars.js',
+      'vendor/moment/moment.js',
+      'vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
       'vendor/ember/ember.js',
       'vendor/ember-qunit-builds/dist/globals/main.js',
 

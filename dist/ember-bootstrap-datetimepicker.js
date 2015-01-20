@@ -98,3 +98,20 @@
 	Ember.DatetimepickerComponent = DateTimePickerComponent;
     Ember.Handlebars.helper('datetimepicker-component', Ember.DatetimepickerComponent);
 }(this));
+
+Ember.TEMPLATES["ember-bootstrap-datetimepicker-template-main"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<div class='datepicker-input-group input-group'>\n	");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'class': ("datepicker-input form-control"),
+    'value': ("pickerValue"),
+    'readonly': ("readonly")
+  },hashTypes:{'class': "STRING",'value': "ID",'readonly': "STRING"},hashContexts:{'class': depth0,'value': depth0,'readonly': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n	<span class='input-group-addon calendar-button'><span class='fa fa-calendar'></span></span>\n</div>");
+  return buffer;
+  
+});
