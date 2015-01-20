@@ -24,7 +24,8 @@
     "console",
     "click",
     "andThen",
-    "sinon"
+    "sinon",
+    "moment"
   ],
   "node" : false,
   "browser" : false,
