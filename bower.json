@@ -1,0 +1,27 @@
+{
+  "name": "ember-bootstrap-datetimepicker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/grese/bootstrap-datetimepicker",
+  "authors": [
+    "grese <grese@yahoo-inc.com>"
+  ],
+  "description": "A bootstrap datetimepicker component for ember",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "build",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "ember": "~1.8.1"
+  },
+  "devDependencies": {
+    "qunit": "~1.16.0",
+    "ember-qunit-builds": "git://github.com/rwjblue/ember-qunit-builds.git"
+  }
+}
