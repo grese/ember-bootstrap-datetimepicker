@@ -7,9 +7,10 @@
 			this.set('pickerValue', this.formatTimestamp(this.get('value')));
 			this._super();
 		},
+		dateFormat: 'MM/DD/YYYY hh:mm',
 		formatTimestamp: function(timestamp){
 			if(timestamp){
-				return moment(timestamp).format('MM/DD/YYYY hh:mm');
+				return moment(timestamp).format(this.get('dateFormat'));
 			}else{
 				return null;
 			}
