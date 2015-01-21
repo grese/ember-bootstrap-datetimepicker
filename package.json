@@ -1,6 +1,6 @@
 {
 	"name": "ember-bootstrap-datetimepicker",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A bootstrap datetimepicker component for ember",
 	"repository": {
 		"type": "git",
