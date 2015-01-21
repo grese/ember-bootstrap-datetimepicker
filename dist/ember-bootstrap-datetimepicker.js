@@ -1,6 +1,7 @@
 (function(){
 	'use strict';
 	var DateTimePickerComponent = Ember.Component.extend({
+		layoutName: 'ember-bootstrap-datetimepicker-template-main',
 		init: function(){
 			// initialize pickerValue with bound value property.
 			this.set('pickerValue', this.formatTimestamp(this.get('value')));
