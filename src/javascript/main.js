@@ -1,6 +1,5 @@
 (function(){
-'use strict';
-
+	'use strict';
 	var DateTimePickerComponent = Ember.Component.extend({
 		init: function(){
 			// initialize pickerValue with bound value property.
