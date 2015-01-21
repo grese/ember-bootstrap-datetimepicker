@@ -17,7 +17,7 @@
 		},
 		dateStringToTimestamp: function(dateString){
 			if(dateString){
-				return moment(dateString, 'MM/DD/YYYY hh:mm').unix() * 1000;
+				return moment(dateString, this.get('dateFormat')).unix() * 1000;
 			}else{
 				return null;
 			}
@@ -31,7 +31,14 @@
 		useSeconds: false,
 		useCurrent: true,
 		minuteStepping: 1,
-		minDate: moment().format('MM/DD/YYYY hh:mm'),
+		minDate: null,
+		getMinDate: function(){
+			if(this.get('minDate') === null){
+				return moment().format(this.get('dateFormat'));
+			}else{
+				return this.get('minDate');
+			}
+		}.property('minDate'),
 		showToday: true,
 		language: 'en',
 		defaultDate: null,
@@ -62,7 +69,7 @@
 					useSeconds: this.get('useSeconds'),
 					useCurrent: this.get('useCurrent'),
 					minuteStepping: this.get('minuteStepping'),
-					minDate: this.get('minDate'),
+					minDate: this.get('getMinDate'),
 					showToday: this.get('showToday'),
 					language: this.get('language'),
 					defaultDate: this.get('defaultDate'),
